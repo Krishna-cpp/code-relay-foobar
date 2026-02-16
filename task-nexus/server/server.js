@@ -283,6 +283,15 @@ app.get('/api/analytics/dashboard', (req, res) => {
 
 
 const PORT = process.env.PORT || 5000;
+app.get("/api", (req, res) => {
+  res.json({ message: "API is working 🚀" });
+});
+app.get("/api/health", (req, res) => {
+  res.json({ status: "ok" });
+});
+
+
 app.listen(PORT, () => {
     console.log(`Nexus stability layer active on port ${PORT}`);
+
 });
