@@ -31,6 +31,20 @@
     color: hsl(var(--text));
     background-color: hsl(var(--bg));
 }
+/* ================= DARK MODE ================= */
+[data-theme="dark"] {
+    --bg: 222 47% 6%;
+    --bg-secondary: 222 47% 8%;
+    --card: 222 47% 10%;
+    --card-hover: 222 47% 12%;
+    --text: 210 40% 98%;
+    --text-muted: 215 20% 65%;
+    --border: 217 33% 17%;
+
+    --glass: rgba(15, 23, 42, 0.65);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-hover: rgba(255, 255, 255, 0.05);
+}
 
 * {
     box-sizing: border-box;
